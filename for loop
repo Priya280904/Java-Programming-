@@ -1,6 +1,6 @@
 syntax:
 for (initialization; condition; update) {
-    // Code to execute in each iteration
+  
 }
 code:
 import java.util.Scanner;
