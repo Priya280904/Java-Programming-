@@ -1,0 +1,28 @@
+import java.util.Scanner;
+class main {
+    public static void main(String[] args) {
+
+       Scanner data= new Scanner(System.in);
+       
+       System.out.println("enter a value a");
+       int a=data.nextInt();
+       
+       System.out.println("enter a value b");
+       int b=data.nextInt();
+       
+       System.out.println("enter a value c");
+       int c=data.nextInt();
+       
+       for(int i=1;i<=a;i++){
+           System.out.println("outerloop" +i);
+          
+           for(int j=1;j<=b;j++){
+           System.out.println("inner loop"   +i);
+           
+           for(int k=1;k<=c;k++){
+           System.out.println(i*j*k);
+       }
+         }         
+        }
+    }
+}
