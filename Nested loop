@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner data = new Scanner(System.in);
+
+        System.out.print("Enter value for i: ");
+        int I = data.nextInt();
+
+        System.out.print("Enter value for j: ");
+        int J = data.nextInt();
+
+        for (int i = I; i >= 0; i--) {
+            System.out.print("i=" + i + " -> "); 
+            for (int j = J; j >= 0; j--) {  
+                System.out.print(j + " ");  
+                System.out.println("Product: " + (i * j)); 
+            }
+            System.out.println(); 
+        }
+
+        data.close();
+    }
+}
