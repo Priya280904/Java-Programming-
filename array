@@ -1,0 +1,15 @@
+class main {
+    public static void main(String[] args) {
+int i;
+String [] array={"Paapu","Priya","Arun"};
+for (i=0;i<array.length;i++){
+    
+    if(array[i]=="Arun"){
+        array[i]="Ammu";
+         System.out.println("Updated array Arun to"+ " " +array[i]);
+        
+    } System.out.println(array[i]);
+
+}
+    }
+}
