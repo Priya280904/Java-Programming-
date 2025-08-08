@@ -71,3 +71,23 @@ Choose an operation:
 3: Multiplication
 Enter your choice: 2
 Result: 18
+syntax:
+modifier return type name(){
+//method body
+}
+//code:
+class main
+{
+   public static void main(String[] args){
+         main obj=new main();
+          obj.sample();
+   }
+
+      public void  sample()
+    {
+       int  a=10;
+       System.out.println(a);
+     }
+}
+//output:
+10
