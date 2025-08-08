@@ -1,0 +1,10 @@
+class Main {
+
+    public static void myMethod(String Fname, String Lname, int age, double height) {
+        System.out.println(Fname + " " + Lname + "\nAge: " + age + "\nHeight: " + height);
+    }
+
+    public static void main(String[] args) {
+        myMethod("Priya", "Nagarajan", 20, 5.7); 
+    }
+}
