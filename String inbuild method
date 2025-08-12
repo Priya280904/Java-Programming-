@@ -1,0 +1,167 @@
+//code:
+class Main {
+    public static void main(String[] args) {
+        String data = "Priya Nagarajan";
+
+        char first = data.charAt(0);
+        int second = data.codePointAt(6);
+        int third =  data.codePointBefore(7);
+
+        System.out.println(first);     
+        System.out.println(second);  
+        System.out.println(third); 
+    }
+}
+// output:
+P
+78
+78
+//code:
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the string:");
+        String data = sc.nextLine();
+            char first = data.charAt(0);             
+            int second = data.codePointAt(6);         
+            int third = data.codePointBefore(4);      
+            System.out.println("First character: " + first);
+            System.out.println(" index 6: " + second);
+            System.out.println(" before index 7: " + third);
+        sc.close();
+    }
+}
+//output:
+Enter the string:
+Priya Nagarajan
+First character: P
+ index 6: 78
+ before index 7: 121
+//code:import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter first string: ");
+        String str1 = sc.nextLine();
+        System.out.print("Enter second string: ");
+        String str2 = sc.nextLine();
+        char first = str1.charAt(0);             
+        int second = str1.codePointCount(0, 5);   
+        int third = str1.compareTo(str2);        
+        System.out.println("character: " + first);
+        System.out.println("count: " + second);
+        System.out.println("Compare: " + third);
+        sc.close();
+    }
+}
+//output:
+Enter first string: Priya
+Enter second string: Prriyaa
+character: P
+count: 5
+Compare: -9 
+//code:
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter first string: ");
+        String str1 = sc.nextLine();
+        System.out.print("Enter second string: ");
+        String str2 = sc.nextLine();
+        int second = str1.compareToIgnoreCase(str2);   
+        String third = str1.concat(str2);        
+        System.out.println("Ignore case: " + second);
+        System.out.println("Concat: " + third);
+        sc.close();
+    }
+}
+//output:
+Enter first string: priya
+Enter second string: paapu
+Ignore case: 17
+Concat: priyapaapu
+//code:
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+        Scanner data=new Scanner(System.in);
+        System.out.println("enter string:");
+        String name=data.nextLine();
+        System.out.println(name.contains("pr"));
+         System.out.println(name.contains("r"));
+          System.out.println(name.contains("ri"));
+           System.out.println(name.contentEquals("priya"));
+            System.out.println(name.contentEquals("p"));
+    }
+}
+//output:
+enter string:
+priya
+true
+true
+true
+true
+false
+//code:
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        char[] chars = new char[5];
+        System.out.println("Enter 5 characters:");
+        for (int i = 0; i < 5; i++) {
+            chars[i] = scanner.next().charAt(0);  
+        }
+        String str = String.copyValueOf(chars);
+        System.out.println("You entered: " + str);
+
+        scanner.close();
+    }
+}
+//output:
+Enter 5 characters:
+p
+a
+a
+p
+u
+You entered: paapu
+//code:
+import java.util.*;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String data = "Priya";
+        String Hi="Hi %s my age is %d";
+        System.out.println(data.equalsIgnoreCase(Hi));
+        System.out.printf(Hi,"Priya",21);
+        
+    }
+}
+//output:
+false
+Hi Priya my age is 21
+//code:
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("name: ");
+        String data = sc.nextLine();
+        System.out.print("age: ");
+        int age = sc.nextInt();
+        String st1 = "Hi %s my age is %d";
+        System.out.println(data.equalsIgnoreCase(st1));
+        System.out.printf(st1, data, age);
+        sc.close();
+    }
+}
+//output:
+name: priya
+age: 21
+Hi priya my age is 21
+
