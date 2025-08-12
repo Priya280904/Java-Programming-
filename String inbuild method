@@ -164,4 +164,39 @@ class Main {
 name: priya
 age: 21
 Hi priya my age is 21
+//code:
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+        char [] data = {'0','1','2','3','4','5','6','7','8','9'};
+        System.out.println(data);
+        String mystring = "helloworld!";
+        mystring.getChars(5,10,data,4);
+        System.out.println(data);
+        
+    }
+}
+//output:
+0123456789
+0123world9
+//code:
+class Main {
+    public static void main(String[] args) {
+        String mystring = "Priya";
+        byte[] name = mystring.getBytes();
+        System.out.println(name[0]);
+    }
+}
+//output:
+80
+//code:
+import java.util.*;
 
+class Main {
+    public static void main(String[] args) {
+        String  x= "Hello world";
+         System.out.println(x.isEmpty());
+    }
+}
+//output:
+false
