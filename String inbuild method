@@ -200,3 +200,189 @@ class Main {
 }
 //output:
 false
+//code:
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+        String  A = "New world";
+        String  P = "Hello world";
+        String x = "priya|world|java";
+        System.out.println("Hello".matches(x));
+        System.out.println("world".matches(x));
+        System.out.println("java".matches(x));
+        System.out.println(P.regionMatches(6,A,4,5));
+    }
+}
+//output:
+false
+true
+true
+true
+//code:
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+        String  A = "New world";
+        String  P = "Hello world";
+       System.out.println(A.replace('e', 'p'));
+        String a ="(?!)Hello";
+        System.out.println(P.replaceAll(a,"priya"));
+        String b = "Hello";
+        System.out.println(P.replaceFirst(b,"priya"));
+    }
+}
+//output:
+Npw world
+Hello world
+priya world
+
+//code:
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+        String  A = "New Year new world";
+        String  P = "[ ,\\ .//s]";
+        String [] z= A.split(P);
+        for(String s:z){
+       System.out.println(s);
+            
+        }
+        
+    }
+}
+//output:
+New
+Year
+new
+world
+//code:
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("name: ");
+        String data = sc.nextLine();
+        String  P = "[,\\ .\\s]";
+        String [] z= data.split(P);
+        for(String s:z){
+       System.out.println(s);
+            
+        }
+        
+    }
+}
+//output:
+name: hi,priya.
+hi
+priya
+//code:
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("name 1: ");
+        String data = sc.nextLine();   
+        System.out.print("name 2: ");
+        String x = sc.nextLine();      
+        String P = "[,\\.\\s]+";
+        String[] z = data.split(P);
+        String rp = data.contains("N") ? "A" : "";
+        System.out.println(z[0] + " " + rp);
+        System.out.println(z[0]);
+        System.out.println(x);
+        System.out.println(z[0] + "" + x);
+    }
+}
+//output:
+name 1: Priya N
+name 2: Arun
+Priya A
+Priya
+Arun
+PriyaArun
+//code:
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String X = "Hello";
+        System.out.println(X.startsWith("Hello"));  
+        System.out.println(X.startsWith("he"));     
+    }
+}
+//output:
+true
+false
+//code:
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String x ="PriyaArun";
+        System.out.println(x.subSequence(0,5));
+        System.out.println(x.subSequence(5,9));
+    }
+}
+//output:
+Priya
+Arun
+//code:
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String x ="PriyaArun";
+        String sub=x.substring(0,5);
+        String sub1=x.substring(5);
+        System.out.println(sub+" "+sub1);
+    }
+}
+//output:
+Priya Arun
+//code:
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String x = "Priya Arun";
+        char[] y = x.toCharArray();
+
+        for (char ch : y) {
+            System.out.print("'" + ch + "' ");
+        }
+    }
+}
+//output:
+'P' 'r' 'i' 'y' 'a' ' ' 'A' 'r' 'u' 'n' 
+//code:
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+         System.out.print("name: ");
+        String x = sc.nextLine();
+        String upper = x.toUpperCase();
+        System.out.println("Uppercase: " + upper);
+        String lower = x.toLowerCase();
+        System.out.println("Lowercase: " + lower);
+        String str = x.toString();
+        System.out.println("String: " + str);
+        char[] y = x.toCharArray();
+        System.out.print("Characters: ");
+        for (char ch : y) {
+            System.out.print("'" + ch + "' ");
+        }
+    }
+}
+//output:
+name: priya
+Uppercase: PRIYA
+Lowercase: priya
+String(): priya
+Characters: 'p' 'r' 'i' 'y' 'a'
+
+        
+        
+        
