@@ -382,7 +382,24 @@ Uppercase: PRIYA
 Lowercase: priya
 String(): priya
 Characters: 'p' 'r' 'i' 'y' 'a'
+//code:
+import java.util.Scanner;
 
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+         System.out.print("name: ");
+        String x = sc.nextLine();
+        System.out.println(x);
+        System.out.println(x.trim());
+        System.out.println(String.valueOf(true));
+    }
+}
+//output:
+name: priya
+priya
+priya
+true
         
         
         
