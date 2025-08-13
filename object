@@ -1,0 +1,30 @@
+//code:
+import java.util.Scanner;
+class Main {
+    int x = 10;
+    public static void main(String[] args) {
+        
+       Main obj=new Main();
+        System.out.println(obj.x);
+    }
+}
+//output:
+10
+//code:
+class PersonalInfo {
+    String n;
+
+    public PersonalInfo(String n) {
+        this.n = n;
+    }
+    @Override
+    public String toString() {
+        return "PersonalInfo{name:'" + n + "'}";
+    }
+    public static void main(String[] args) {
+        PersonalInfo p = new PersonalInfo("Priyanagarajan");
+        System.out.println(p.toString());
+    }
+}
+//output:
+PersonalInfo{name:'Priyanagarajan'}
