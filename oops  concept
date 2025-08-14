@@ -47,3 +47,111 @@ chinnaiya
 sarasvathi
 nagarajan
 neela
+\\code:
+import java.util.Scanner;
+
+class Family {
+    String name;
+
+    Family(String name) {
+        this.name = name;
+    }
+    void sound() {
+        System.out.println(name);
+    }
+}
+class Father extends Family {
+    Father(String name) {
+        super(name);
+    }
+}
+class Mother extends Family {
+    Mother(String name) {
+        super(name);
+    }
+}
+class Sister extends Family {
+    Sister(String name) {
+        super(name);
+    }
+}
+class Brother extends Family {
+    Brother(String name) {
+        super(name);
+    }
+}
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter father name: ");
+        Family f1 = new Father(sc.nextLine());
+        System.out.print("Enter mother name: ");
+        Family f2 = new Mother(sc.nextLine());
+        System.out.print("Enter sister name: ");
+        Family f3 = new Sister(sc.nextLine());
+        System.out.print("Enter Brother name: ");
+        Family f4 = new Brother(sc.nextLine());
+        f1.sound();
+        f2.sound();
+        f3.sound();
+        f4.sound();
+        sc.close();
+    }
+}
+//output:
+Enter father name: Nagarajan
+Enter mother name: Neela
+Enter sister name: Pavithra
+Enter Brother name: Ranjith
+Nagarajan
+Neela
+Pavithra
+Ranjith
+//code:
+class cars{
+    void sound(){
+        System.out.println("cars makes a sound");
+    }
+}
+class Audi extends cars{
+    void sound(){
+        System.out.println("Audi");
+    }
+}
+public class Main {
+    public static void main(String[] args) {
+    cars a;
+    a=new Audi();
+    a.sound();
+    }
+}
+//output:
+Audi
+//code:
+import java.util.Scanner;
+
+class grandparents{
+    grandparents() {
+        System.out.println("thaatha");
+    }
+}
+class cousins extends grandparents{
+    cousins() {
+        System.out.println("cousin");
+    }
+}
+class  daughter  extends cousins{
+    daughter() {
+        System.out.println("i am priya");
+    }
+}
+public class Main {
+    public static void main(String[] args) {
+        
+        daughter obj = new daughter();
+    }
+}
+//output;
+thaatha
+cousin
+i am priya
