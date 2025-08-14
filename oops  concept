@@ -1,0 +1,49 @@
+//code:
+class Grandparents {
+    void sound() {
+        System.out.println("Cars make a sound");
+    }
+}
+
+class chinnaiya extends Grandparents  {
+    void sound() {
+        System.out.println("chinnaiya");
+    }
+}
+
+class sarasvathi extends Grandparents {
+    void sound() {
+        System.out.println("sarasvathi");
+    }
+}
+
+class nagarajan extends Grandparents {
+    void sound() {
+        System.out.println("nagarajan");
+    }
+}
+class neela extends Grandparents {
+    void sound() {
+        System.out.println("neela");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Grandparents name1 = new chinnaiya();
+        Grandparents name2 = new sarasvathi();
+        Grandparents name3 = new nagarajan();
+        Grandparents name4 = new neela();
+        Grandparents genericCar = new Grandparents();
+
+        name1.sound();       
+        name2.sound();       
+        name3.sound();   
+        name4.sound();   
+    }
+}
+//output:
+chinnaiya
+sarasvathi
+nagarajan
+neela
